@@ -51,6 +51,15 @@ unit_conversion = {
     "unit:Pa": unchanged,
     "unit:percent": unchanged,
     "unit:degree_(angle)": unchanged,
+    
+    "wmoUnit:degC": unchanged,
+    "wmoUnit:degF": f_to_c,
+    "wmoUnit:km_h-1": unchanged,
+    "wmoUnit:m_s-1": m_p_s_to_km_p_hr,
+    "wmoUnit:m": unchanged,
+    "wmoUnit:Pa": unchanged,
+    "wmoUnit:percent": unchanged,
+    "wmoUnit:degree_(angle)": unchanged,
 }
 
 WIND = {name: idx * 360 / 16 for idx, name in enumerate(WIND_DIRECTIONS)}
